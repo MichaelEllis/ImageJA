@@ -214,11 +214,11 @@ public class ImageJ extends Frame implements ActionListener,
 			IJ.error(err2);
 			IJ.runPlugIn("ij.plugin.ClassChecker", "");
 		}
-		if (IJ.isMacintosh()&&applet==null) {
-			try {
-				IJ.runPlugIn("ij.plugin.MacAdapter", ""); 
-			} catch(Throwable e) {}
-		} 
+//		if (IJ.isMacintosh()&&applet==null) {
+//			try {
+//				IJ.runPlugIn("ij.plugin.MacAdapter", ""); 
+//			} catch(Throwable e) {}
+//		} 
 		if (applet==null)
 			IJ.runPlugIn("ij.plugin.DragAndDrop", "");
 		String str = m.getMacroCount()==1?" macro":" macros";
